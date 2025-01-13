@@ -8,6 +8,7 @@ jobs:
   deploy-staging:
     name: Deploy to staging server
     runs-on: ubuntu-latest
+    
     steps:
       - name: Execute deployment command
         uses: appleboy/ssh-action@v1.0.3
@@ -44,6 +45,6 @@ jobs:
             sudo docker compose up --build --detach pacmusic-stg
                     
       - name: Hit Endpoint
-        run:  |
+        run: |
           sleep 20
           curl ${{ secrets.STG_URL }}
