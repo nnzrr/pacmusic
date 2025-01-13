@@ -3,8 +3,8 @@ name: Deploy Production 🚀
 on:
   release:
     types:
-    - published
-    - edited
+      - published
+      - edited
 
 jobs:
   deploy-production:
