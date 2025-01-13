@@ -33,7 +33,7 @@ jobs:
             fi
 
             echo "APP_IMAGE=${DOCKERHUB_USERNAME}/pacmusic" > .env
-            echo "APP_TAG=$APP_TAG" >> .env
+            echo "APP_TAG=v1.0.0" >> .env
             echo "APP_PROD_PORT=$APP_PROD_PORT" >> .env
             echo "MINIO_PROD_ENDPOINT=$MINIO_PROD_ENDPOINT" >> .env
             echo "MINIO_PROD_ACCESS_KEY=$MINIO_PROD_ACCESS_KEY" >> .env
