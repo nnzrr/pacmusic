@@ -30,7 +30,7 @@ jobs:
               sudo docker compose down
               git pull origin main
             else
-              git clone $GIT_URL $APP_STG_PATH
+              git clone git@github.com:nnzrr/pacmusic.git $APP_STG_PATH
               cd $APP_STG_PATH
             fi
 
