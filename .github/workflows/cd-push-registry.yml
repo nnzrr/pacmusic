@@ -29,6 +29,6 @@ jobs:
           context: ./app
           file: ./app/Dockerfile
           push: true
-            tags: |
-              ${{ secrets.DOCKERHUB_USERNAME }}/pacmusic:v1.0.0
-              ${{ secrets.DOCKERHUB_USERNAME }}/pacmusic:latest
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/pacmusic:v1.0.0
+            ${{ secrets.DOCKERHUB_USERNAME }}/pacmusic:latest
